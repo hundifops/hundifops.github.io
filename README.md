@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## Cody Wiley
 
-You can use the [editor on GitHub](https://github.com/cwiley02/cwiley02.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Cody Wiley is a college student attending _New River Community and Technical College_ and studying **Cybersecurity**. Cody first attended *Fairmont State University* and studied **Mechanical Engineering** and **Psychology**, but then made the switch to **Cybersecurity** because of his interests. As a firm believer that research should be open source and available to anyone wanting to enter the world of **Cybersecurity** and **Programming**, most source code will be available on GitHub.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
