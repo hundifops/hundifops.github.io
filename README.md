@@ -9,8 +9,8 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ## Education
 
 ```markdown
-_New River Community and Techncial College_
-**A.A.S Cybersecurity**
+New River Community and Techncial College
+A.A.S Cybersecurity
 2022-2024
 
 # Header 1
