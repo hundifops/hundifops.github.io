@@ -2,20 +2,35 @@
 
 Cody Wiley is a college student attending _New River Community and Technical College_ and studying **Cybersecurity**. Cody first attended *Fairmont State University* and studied **Mechanical Engineering** and **Psychology**, but then made the switch to **Cybersecurity** because of his interests. As a firm believer that research should be open source and available to anyone wanting to enter the world of **Cybersecurity** and **Programming**, most source code will be available on GitHub.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
 ## Education
 
 ```markdown
 New River Community and Techncial College
 A.A.S Cybersecurity
 2022-2024
+```
 
-# Header 1
-## Header 2
-### Header 3
+## Current Position
+
+```markdown
+Student at New River Community and Technical College
+```
+
+# Previous Positions
+
+```markdown
+1. Assistant Tutor
+Fairmont, WV
+2021-2022
+
+2. Lifeguard
+Raleigh County Parks and Recreation
+2020-2021
+
+3. Lifeguard
+City of Mullens, WV
+2019-2019
+```
 
 - Bulleted
 - List
