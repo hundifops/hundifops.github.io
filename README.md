@@ -1,6 +1,6 @@
 ## Cody Wiley
 
-Cody Wiley is a college student attending _New River Community and Technical College_ and studying **Cybersecurity**. Cody first attended *Fairmont State University* and studied **Mechanical Engineering** and **Psychology**, but then made the switch to **Cybersecurity** because of his interests. As a firm believer that research should be open source and available to anyone wanting to enter the world of **Cybersecurity** and **Programming**, most source code will be available on GitHub.
+I am a college student attending _New River Community and Technical College_ and studying **Cybersecurity**. I first attended *Fairmont State University* and studied **Mechanical Engineering** and then **Psychology**, but then made the switch to **Cybersecurity** because of my interests in security. As a firm believer that research should be open source and available to anyone wanting to enter the world of **Cybersecurity** and **Programming**, most source code will be available on GitHub.
 
 ## Education
 
