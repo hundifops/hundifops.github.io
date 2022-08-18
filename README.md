@@ -34,10 +34,9 @@ City of Mullens, WV
 
 ## Other links
 
-```markdown
 [LinkedIn](https://www.linkedin.com/in/cody-wiley-30b678209/)
 [Twitter](https://twitter.com/cwiley2002)
-```
+
 
 - Bulleted
 - List
