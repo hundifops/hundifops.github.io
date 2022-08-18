@@ -32,6 +32,12 @@ City of Mullens, WV
 2019-2019
 ```
 
+## Other links
+
+```markdown
+LinkedIn: https://www.linkedin.com/in/cody-wiley-30b678209/
+Twitter: @cwiley2002
+
 - Bulleted
 - List
 
