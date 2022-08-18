@@ -7,7 +7,7 @@ Cody Wiley is a college student attending _New River Community and Technical Col
 ```markdown
 New River Community and Techncial College
 A.A.S Cybersecurity
-2022-2024
+2022-present
 ```
 
 ## Current Position
