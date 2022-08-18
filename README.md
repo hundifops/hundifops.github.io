@@ -37,6 +37,7 @@ City of Mullens, WV
 ```markdown
 LinkedIn: https://www.linkedin.com/in/cody-wiley-30b678209/
 Twitter: @cwiley2002
+```
 
 - Bulleted
 - List
