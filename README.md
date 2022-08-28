@@ -32,6 +32,12 @@ City of Mullens, WV
 2019-2019
 ```
 
+# Skills and Certifications
+
+```markdown
+
+```
+
 ## Other links
 
 [LinkedIn](https://www.linkedin.com/in/cody-wiley-30b678209/)
