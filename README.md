@@ -4,35 +4,22 @@ I am a college student attending _New River Community and Technical College_ and
 
 ## Education
 
-```markdown
-New River Community and Techncial College
-A.A.S Cybersecurity
-2022-present
-```
+**A.A.S. in Cybersecurity**, *New River Community and Technical College* (GPA) | 2022-Present | 
+
 
 ## Current Position
 
-```
-Student at New River Community and Technical College
-```
+Student at *New River Community and Technical College*
+
 
 # Previous Positions
 
-```
-1. Assistant Tutor
-West Fairmont Middle School
-Fairmont, WV
-2021-2022
+1. **Assistant Tutor**, *Fairmont, WV* | 2021-2022
 
-2. Lifeguard
-Lake Stephens, Surveyor, WV
-Raleigh County Parks and Recreation
-2020-2021
+2. **Lifeguard**, *Raleigh County Parks and Recreation, Surveyor WV* | 2020-2021
 
-3. Lifeguard
-City of Mullens, WV
-2019-2019
-```
+3. **Lifeguard**, *City of Mullens, WV* | 2019-2019
+
 
 # Skills and Certifications
 
