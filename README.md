@@ -14,11 +14,11 @@ Student at *New River Community and Technical College*
 
 # Previous Positions
 
-1. **Assistant Tutor**, *Fairmont, WV* | 2021-2022
+1. **Assistant Tutor**, *Fairmont WV* | 2021-2022
 
-2. **Lifeguard**, *Raleigh County Parks and Recreation, Surveyor WV* | 2020-2021
+2. **Lifeguard**, *Raleigh County Parks and Recreation WV* | 2020-2021
 
-3. **Lifeguard**, *City of Mullens, WV* | 2019-2019
+3. **Lifeguard**, *City of Mullens WV* | 2019-2019
 
 
 # Skills and Certifications
