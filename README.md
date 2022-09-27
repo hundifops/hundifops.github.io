@@ -23,9 +23,7 @@ Student at *New River Community and Technical College*
 
 # Skills and Certifications
 
-```
-TBA
-```
+1. Various Scholarships
 
 ## Links
 
