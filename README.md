@@ -4,7 +4,7 @@ I am a college student attending _New River Community and Technical College_ and
 
 ## Education
 
-**A.A.S. in Cybersecurity**, *New River Community and Technical College* (GPA) | 2022-Present | 
+**A.A.S. in Cybersecurity**, *New River Community and Technical College* (GPA TBA) | 2022-Present | 
 
 
 ## Current Position
