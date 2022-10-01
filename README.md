@@ -14,7 +14,7 @@ Student at *New River Community and Technical College*
 
 # Previous Positions
 
-1. **Assistant Tutor**, *Fairmont WV* | 2021-2022
+1. **Assistant Tutor**, *Tygart Valley United Way* Fairmont WV | 2021-2022
 
 2. **Lifeguard**, *Raleigh County Parks and Recreation WV* | 2020-2021
 
