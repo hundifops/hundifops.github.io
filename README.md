@@ -1,6 +1,6 @@
 ## Cody Wiley
 
-I am a college student attending _New River Community and Technical College_ and studying **Cybersecurity**. I hope to someday get my bachelors, and maybe a PhD in Computer Science. As a firm believer that research should be open source and available to anyone wanting to enter the world of **Cybersecurity** and **Programming**, most of my research and practice code will be available on GitHub.
+I am a college student attending _New River Community and Technical College_ and studying **Cybersecurity**. As a firm believer that research should be open source and available to anyone wanting to enter the world of **Cybersecurity** and **Programming**, most of my research and practice code will be available on GitHub.
 
 ## Education
 
@@ -25,7 +25,7 @@ Student at *New River Community and Technical College*
 
 1. Various Scholarships
 
-## Links
+## Social
 
 [LinkedIn](https://www.linkedin.com/in/cody-wiley-30b678209/)
 
