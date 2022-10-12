@@ -1,6 +1,6 @@
 ## Cody Wiley
 
-I am a college student attending _New River Community and Technical College_ and studying **Cybersecurity**. As a firm believer that research should be open source and available to anyone wanting to enter the world of **Cybersecurity** and **Programming**, most of my research and practice code will be available on GitHub.
+I am a college student attending _New River Community and Technical College_ and studying **Cybersecurity**. As a firm believer that science should be open source and available to anyone wanting to enter the world of **Cybersecurity** and **Programming**, most of my research and practice code will be available on GitHub.
 
 ## Education
 
