@@ -21,11 +21,13 @@ Student at *New River Community and Technical College*
 3. **Lifeguard**, *City of Mullens WV* | 2019-2019
 
 
-# Skills and Certifications
+# Skills 
 
-1. Various Scholarships
+## Programming
 
-## Social
+C#, Python
+
+# Social
 
 [LinkedIn](https://www.linkedin.com/in/cody-wiley-30b678209/)
 
