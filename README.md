@@ -25,7 +25,7 @@ Student at *New River Community and Technical College*
 
 ## Programming
 
-C#, Python
+C#, HTML, Python
 
 # Social
 
