@@ -12,7 +12,8 @@ I am a college student attending _New River Community and Technical College_ and
 ## Current Position
 
 Student at *New River Community and Technical College*
-Future student at East Tennessee State University
+
+Future student at *East Tennessee State University*
 
 
 # Previous Positions
