@@ -1,15 +1,18 @@
 ## Cody Wiley
 
-I am a college student attending _New River Community and Technical College_ and studying **Cybersecurity**. As a firm believer that science should be open source and available to anyone wanting to enter the world of **Cybersecurity** and **Programming**, most of my research and practice code will be available on GitHub.
+I am a college student attending _New River Community and Technical College_ and studying **Cybersecurity**. I will be transferring to _East Tennessee State University_ to obtain my **B.S. in Cybersecurity and Information Systems** in the the fall of 2023. My core interests involve _Security, Information Systems, Networks, and Programming_. Any code I produce, whether it's for school, homework, or personal use will be posted to my [GitHub](https://github.com/cwiley02).
 
 ## Education
 
-**A.A.S. in Cybersecurity**, *New River Community and Technical College* (GPA TBA) | 2022-Present | 
+**A.A.S. in Cybersecurity**, *New River Community and Technical College* (GPA TBA) | 2022-2023 | *Transfered before degree* |
+
+**B.S. in Cybersecurity**, *East Tennessee State University* (GPA TBA) | 2023-future |
 
 
 ## Current Position
 
 Student at *New River Community and Technical College*
+Future student at East Tennessee State University
 
 
 # Previous Positions
@@ -33,3 +36,4 @@ C#, HTML, Python
 
 [Twitter](https://twitter.com/cwiley2002)
 
+[GitHub](https://github.com/cwiley02)
