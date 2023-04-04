@@ -26,6 +26,8 @@ Future student at *East Tennessee State University*
 
 3. **Lifeguard**, *City of Mullens* Mullens WV | 2019-2019
 
+4. **Unknown Title (TBD)**, *The Axe Hole* Beckley WV | 2023-2023
+
 
 # Skills 
 
