@@ -6,7 +6,7 @@ I am a college student attending _New River Community and Technical College_ and
 
 **A.A.S. in Cybersecurity**, *New River Community and Technical College* (GPA TBA) | 2022-2023 | *Transfered before degree* |
 
-**B.S. in Cybersecurity**, *East Tennessee State University* (GPA TBA) | 2023-future |
+**B.S. in Computer Science**, *East Tennessee State University* (GPA TBA) | 2023-future |
 
 
 ## Current Position
@@ -20,16 +20,18 @@ Future student at *East Tennessee State University*
 
 # Previous Positions
 
-1. **Assistant Tutor**, *Tygart Valley United Way* Fairmont WV | 2021-2022
+1. **Axe Pro**, *The Axe Hole* Beckley WV | 2023-2023
 
-2. **Lifeguard**, *Raleigh County Parks and Recreation* Surveyor WV| 2020-2021
+2. **Assistant Tutor**, *Tygart Valley United Way* Fairmont WV | 2021-2022
 
-3. **Lifeguard**, *City of Mullens* Mullens WV | 2019-2019
+3. **Lifeguard**, *Raleigh County Parks and Recreation* Surveyor WV| 2020-2021
 
-4. **Unknown Title (TBD)**, *The Axe Hole* Beckley WV | 2023-2023
+4. **Lifeguard**, *City of Mullens* Mullens WV | 2019-2019
 
 
-# Skills 
+# Certifications
+
+1.**PC Pro certification**, *Testout*
 
 ## Programming
 
