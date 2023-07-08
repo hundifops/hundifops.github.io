@@ -4,16 +4,12 @@ I am a college student attending _East Tennessee State University_ and studying 
 
 ## Education
 
-**B.S. in Computer Science**, *East Tennessee State University* (GPA TBA) | 2023-future |
+**B.S. in Computer Science**, *East Tennessee State University* (GPA TBA) | 2023- |
 
 
 ## Current Position
 
-Student at *New River Community and Technical College*
-
-## Future Position(s)
-
-Future student at *East Tennessee State University*
+Student at *East Tennessee State University*
 
 
 # Previous Positions
@@ -26,15 +22,16 @@ Future student at *East Tennessee State University*
 
 4. **Lifeguard**, *City of Mullens* Mullens WV | 2019-2019
 
-
-# Certifications
-
-1.**PC Pro certification**, *Testout*
-
+# Skills
 ## Programming
-
 C#, HTML, Python
 
+## Frameworks
+Pytorch, Tensorflow
+
+## Toolbox
+
+Linux, MacOS, VSCode, zsh
 # Social
 
 [LinkedIn](https://www.linkedin.com/in/cody-wiley-30b678209/)
