@@ -1,15 +1,19 @@
 ## Cody Wiley
 
-I am a college student attending _East Tennessee State University_ and studying **Computer Science**. My core interests involve _Software engineering and Machine Learning_. Any code I produce, whether it's for school, homework, or personal use will be posted to my [GitHub](https://github.com/cwiley02).
+I am a college student attending _West Virginia University Institute of Technology_ and studying **Computer Science**. My core interests involve _Software engineering and Machine Learning_. Any code I produce, whether it's for school, homework, or personal use will be posted to my [GitHub](https://github.com/cwiley02).
 
 ## Education
 
-**B.S. in Computer Science**, *East Tennessee State University* (GPA TBA) | 2023- |
+*Fairmont State University* (2021-2022)
+
+**A.A.S in Cyber Security**, *New River Community and Technical College* (2022 - 2023)
+
+**B.S. in Computer Science**, *West Virginia University Institute of Technology* (GPA TBA) | 2023- |
 
 
 ## Current Position
 
-Student at *East Tennessee State University*
+Student at *West Virginia University Institute of Technology*
 
 
 # Previous Positions
@@ -31,7 +35,7 @@ Pytorch, Tensorflow
 
 ## Toolbox
 
-Linux, MacOS, VSCode, zsh
+Linux, MacOS, XCode, VSCode, zsh
 # Social
 
 [LinkedIn](https://www.linkedin.com/in/cody-wiley-30b678209/)
