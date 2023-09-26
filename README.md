@@ -28,14 +28,14 @@ Student at *West Virginia University Institute of Technology*
 
 # Skills
 ## Programming
-C#, HTML, Python
+Python, C
 
 ## Frameworks
-Pytorch, Tensorflow
+NumPy, PyTorch, SciPy, TensorFlow
 
 ## Toolbox
 
-Linux, MacOS, XCode, VSCode, zsh
+Linux, emacs, evil, zsh
 # Social
 
 [LinkedIn](https://www.linkedin.com/in/cody-wiley-30b678209/)
