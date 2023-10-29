@@ -1,6 +1,6 @@
 ## Cody Wiley
 
-I am a college student attending _West Virginia University Institute of Technology_ and studying **Computer Science**. My core interests involve _Software engineering and Machine Learning_. Any code I produce, whether it's for school, homework, or personal use will be posted to my [GitHub](https://github.com/cwiley02).
+I am a student attending _West Virginia University Institute of Technology_ and studying **Computer Science**. My core interests involve _Software engineering_ and _Machine Learning_. I wish to become a research scientist one day. Any code I produce, whether it's for school, or personal, use will be published to my [GitHub](https://github.com/cwiley02).
 
 ## Education
 
