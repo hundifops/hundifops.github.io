@@ -28,8 +28,8 @@ Student at *West Virginia University Institute of Technology*
 
 # Public Repositories
 
-[Python Scripts](https://github.com/cwiley02/Python-Scripts)
-[Website](https://github.com/cwiley02/cwiley02.github.io)
+1. [Python Scripts](https://github.com/cwiley02/Python-Scripts)
+2. [Website](https://github.com/cwiley02/cwiley02.github.io)
 
 # Skills
 ## Programming
