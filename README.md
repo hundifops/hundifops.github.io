@@ -26,6 +26,11 @@ Student at *West Virginia University Institute of Technology*
 
 4. **Lifeguard**, *City of Mullens* Mullens WV | 2019-2019
 
+# Public Repositories
+
+[Python Scripts](https://github.com/cwiley02/Python-Scripts)
+[Website](https://github.com/cwiley02/cwiley02.github.io)
+
 # Skills
 ## Programming
 Python, C
