@@ -1,7 +1,12 @@
 h1, h2, h3 {
     text-align: center;
 }
+
 body {
-    background-color: blanchedalmond;
+    background-color:blanchedalmond;
+}
+
+.img {
+    text-align: center;
 }
 
