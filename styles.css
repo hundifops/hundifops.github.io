@@ -10,3 +10,8 @@ body {
     text-align: center;
 }
 
+.dates {
+    display: inline-block;
+    text-align: right;
+}
+
