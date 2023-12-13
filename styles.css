@@ -4,6 +4,7 @@ h1, h2, h3 {
 
 body {
     background-color:blanchedalmond;
+    padding: 10px
 }
 
 .img {
@@ -16,7 +17,7 @@ body {
 }
 
 hr {
-    height: 3px;
+    height: 2px;
     background-color: black;
     border-color: black
 }
