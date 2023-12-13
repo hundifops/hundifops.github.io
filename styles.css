@@ -16,5 +16,6 @@ body {
 }
 
 hr {
-    height: 3px
+    height: 3px;
+    background-color: black;
 }
