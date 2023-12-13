@@ -18,4 +18,5 @@ body {
 hr {
     height: 3px;
     background-color: black;
+    border-color: black
 }
