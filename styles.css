@@ -9,6 +9,7 @@ body {
 
 .img {
     text-align: center;
+    display: inline-flex
 }
 
 .dates {
