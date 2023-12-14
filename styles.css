@@ -27,3 +27,12 @@ hr {
     margin-bottom: 5px;
     margin-top: 5px;
 }
+
+a:hover {
+    color: brown
+}
+
+a:visited {
+    color: orange
+}
+/* This one will have to be changed a lot since live preview doesn't let me see the link afterwards */
