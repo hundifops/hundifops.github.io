@@ -33,6 +33,10 @@ a:hover {
 }
 
 a:visited {
-    color: orange
+    color: 
 }
 /* This one will have to be changed a lot since live preview doesn't let me see the link afterwards */
+
+a:active {
+    color: white;
+}
