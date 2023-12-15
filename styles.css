@@ -1,0 +1,12 @@
+body {
+    background-color: lightgrey
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+    background-color:black ;
+}
