@@ -17,3 +17,9 @@ hr {
 .links {
 
 }
+
+img {
+    border-radius: 20px;
+    margin: 10px;
+    max-width: 300px;
+}
