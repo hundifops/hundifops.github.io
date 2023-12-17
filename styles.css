@@ -24,3 +24,14 @@ img {
     margin: 10px;
     max-width: 300px;
 }
+
+.idxHdr {
+    text-align: middle;
+    line-height: 1;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
