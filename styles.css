@@ -1,5 +1,5 @@
 body {
-    background-color: lightgrey
+    background-color: lightgray;
 }
 
 h1, h3 {
@@ -34,4 +34,9 @@ img {
     display: inline-block;
     vertical-align: middle;
     float: none;
+}
+
+mark {
+    background-color: yellow;
+    color: black
 }
