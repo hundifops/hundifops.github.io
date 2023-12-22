@@ -40,3 +40,19 @@ mark {
     background-color: yellow;
     color: black
 }
+
+a {
+    color: #BC1bb0
+}
+
+a:active {
+    color: red
+}
+
+a:visited {
+    color: purple
+}
+
+a:hover {
+    color: purple;
+}
