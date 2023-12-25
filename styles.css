@@ -25,11 +25,6 @@ img {
     max-width: 300px;
 }
 
-.idxHdr {
-    text-align: middle;
-    line-height: 1;
-}
-
 .vcenter {
     display: inline-block;
     vertical-align: middle;
@@ -55,4 +50,9 @@ a:visited {
 
 a:hover {
     color: purple;
+}
+
+.p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
 }
