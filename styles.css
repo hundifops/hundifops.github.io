@@ -57,3 +57,12 @@ a:hover {
     font-size: medium;
 }
 
+#div_top_hypers {
+    background-color: lightgrey;
+    display: inline;
+}
+
+#ul_top_hypers li {
+    display: inline;
+    word-spacing: 2px;
+}
