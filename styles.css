@@ -52,7 +52,7 @@ a:hover {
     color: purple;
 }
 
-.p {
+#p {
     font-family: 'Times New Roman', Times, serif;
     font-size: medium;
 }
@@ -68,6 +68,6 @@ a:hover {
 }
 
 .name {
-    float: auto;
-    display: inline;
+    display: inline-block;
+
 }
