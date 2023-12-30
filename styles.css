@@ -65,6 +65,9 @@ a:hover {
 #ul_top_hypers li {
     display: inline;
     word-spacing: 2px;
-    padding: 2px;
-    
+}
+
+.name {
+    float: auto;
+    display: inline;
 }
