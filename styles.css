@@ -69,5 +69,10 @@ a:hover {
 
 .name {
     display: inline-block;
-
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 150px;
+    margin-top: 20px;
 }
