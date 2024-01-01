@@ -60,7 +60,8 @@ a:hover {
 
 #div_top_hypers {
     background-color: lightgrey;
-    display: inline;
+    position: absolute;
+    text-align: center;
 }
 
 #ul_top_hypers li {
@@ -83,5 +84,10 @@ a:hover {
 
 .center {
     font-size: 1.7em;
+    text-align: center;
+}
+
+.email {
+    font-size: 1.2em;
     text-align: center;
 }
