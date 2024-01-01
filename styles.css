@@ -69,14 +69,19 @@ a:hover {
 }
 
 .name {
-    display: inline-block;;
+    display: inline-block;
     position: absolute;
     top: 0;
     right: 0;
     margin: 150px;
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 .top-bar {
 
+}
+
+.center {
+    font-size: 1.7em;
+    text-align: center;
 }
