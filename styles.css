@@ -65,8 +65,9 @@ a:hover {
 }
 
 #ul_top_hypers li {
-    display: inline;
     word-spacing: 2px;
+    display: inline;
+    
 }
 
 .name {
@@ -79,7 +80,7 @@ a:hover {
 }
 
 .top-bar {
-
+    
 }
 
 .center {
