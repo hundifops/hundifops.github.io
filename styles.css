@@ -67,6 +67,7 @@ a:hover {
 #ul_top_hypers li {
     word-spacing: 2px;
     display: inline;
+    margin: 1.7em;
 }
 
 .name {
