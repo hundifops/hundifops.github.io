@@ -59,7 +59,7 @@ a:hover {
 }
 
 #div_top_hypers {
-    background-color: lightgrey;
+    background-color: transparent;
     position: absolute;
     text-align: center;
 }
@@ -68,6 +68,8 @@ a:hover {
     word-spacing: 2px;
     display: inline;
     margin: 1.7em;
+    padding: 0;
+    flex-wrap: inherit;
 }
 
 .name {
