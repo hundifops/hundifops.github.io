@@ -74,7 +74,7 @@ a:hover {
 
 .name {
     display: inline-block;
-    position: fixed;
+    position: static;
     top: 75px;
     left: 450px;
     margin: 0;
