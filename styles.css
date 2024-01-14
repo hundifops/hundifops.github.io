@@ -75,7 +75,9 @@ a:hover {
 .name {
     display: inline-block;
     position: static;
-    position: 
+    top: 75px;
+    left: 450px;
+    margin: 0;
 }
 
 .top-bar {
@@ -90,4 +92,10 @@ a:hover {
 .email {
     font-size: 1.2em;
     text-align: center;
+}
+
+#hr-row {
+    display: flex;
+    flex-direction: row;
+    height: 2em;
 }
