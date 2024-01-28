@@ -43,6 +43,10 @@ a {
     background-color: transparent;
 }
 
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
 a:active {
     color: red
 }
