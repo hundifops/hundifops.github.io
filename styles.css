@@ -38,7 +38,9 @@ mark {
 }
 
 a {
-    color: #BC1bb0
+    color: #BC1bb0;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 a:active {
@@ -51,6 +53,10 @@ a:visited {
 
 a:hover {
     color: purple;
+}
+
+a:-webkit-any-link {
+    box-sizing: border-box;
 }
 
 #p {
@@ -94,4 +100,34 @@ a:hover {
     display: flex;
     flex-direction: row;
     height: 2em;
+}
+
+.date {
+    float: right;
+    margin: 0.5em;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 22px;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-sizing: border-box;
+    display: table;
+    text-indent: initial;
+    border-color: gray;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+.fa-star:before {
+    content: \f005;
 }
