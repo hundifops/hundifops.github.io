@@ -131,3 +131,11 @@ table {
 .fa-star:before {
     content: \f005;
 }
+
+em {
+    font-style: italic;
+}
+
+td {
+    display: table-cell;
+}
