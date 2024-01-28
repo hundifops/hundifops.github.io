@@ -1,3 +1,15 @@
-theme: jekyll-theme-minimal
-title: Cody Wiley
-description: cwiley.cs@gmail.com
+name: Hundi Fops
+url: http://hundifops.github.io
+destination: ./_site
+twitter: hundifops
+lsi: false
+port: 4000
+markdown: kramdown
+future: true
+kramdown:
+  parse_block_html: true
+  syntax_highlighter: rouge
+permalink: pretty
+
+exclude:
+  - README.md
