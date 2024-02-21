@@ -52,11 +52,12 @@ html {
     width: 22px;
     height: 2px;
     border-radius: 1px;
-        border-top-left-radius: 1px;
-        border-top-right-radius: 1px;
-        border-bottom-right-radius: 1px;
-        border-bottom-left-radius: 1px;
+}
 
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
 }
 
 .col-md-10 {
@@ -83,4 +84,40 @@ html {
     line-height: 1.9;
     font-size: 20px;
     height: 65px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.navbar-brand-img {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    border: none;
+}
+
+button {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-indent: 0;
+    text-shadow: none;
+    text-align: center;
+    padding-block: 1px;
+    padding-inline: 6px;
+    
+}
+
+button, html, input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button {
+    overflow: visible;
 }
