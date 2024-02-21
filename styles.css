@@ -59,3 +59,28 @@ html {
 
 }
 
+.col-md-10 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-header::before {
+    content: " ";
+    display: table;
+}
+
+.navbar-default .navbar-brand {
+    color: red;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 21.5px 15px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    line-height: 1.9;
+    font-size: 20px;
+    height: 65px;
+}
