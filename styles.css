@@ -28,3 +28,24 @@ a {
     color: #9b45ec;
     text-decoration: none;
 }
+
+.fa-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 ForkAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    padding: 3px;
+    border: 2px solid;
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
