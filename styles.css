@@ -1,123 +1,30 @@
 body {
-    background-color: lightgray;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 16px;
-    line-height: 1.42857243;
-    color: #333333;
-    background-color: #ffffff;
-    padding-top: 70px;
-    margin: 0;
-    display: block;
+    background-color: rgb(206, 199, 199);
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-.navbar {
-    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
-    min-height: 65px;
-    margin-bottom: 22px;
-    border: 1px solid transparent;
-}
-
-.navbar-fixed-top {
-    position: fixed;
-    right: 0;
-    left: 0;
-    z-index: 1030;
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 div {
     display: block;
 }
 
-html {
-    -webkit-text-size-adjust: 100%;
-}
-
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #cccccc;
-}
-
-.navbar-toggle .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-}
-
-input, button, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-}
-
-.col-md-10 {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.navbar-header::before {
-    content: " ";
-    display: table;
-}
-
-.navbar-default .navbar-brand {
-    color: red;
-}
-
-.navbar-brand {
-    float: left;
-    padding: 21.5px 15px;
-    padding-top: 12.5px;
-    padding-bottom: 12.5px;
-    line-height: 1.9;
-    font-size: 20px;
-    height: 65px;
-}
-
-.img-circle {
-    border-radius: 50%;
-}
-
-.navbar-brand-img {
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
-    border: none;
-}
-
-button {
-    text-rendering: auto;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-indent: 0;
-    text-shadow: none;
+.idxHdr {
     text-align: center;
-    padding-block: 1px;
-    padding-inline: 6px;
-    
+    line-height: 1;
 }
 
-button, html, input[type="button"], input[type="reset"], input[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
-button, select {
-    text-transform: none;
-}
-
-button {
-    overflow: visible;
+a {
+    color: #9b45ec;
+    text-decoration: none;
 }
