@@ -43,11 +43,10 @@ a {
 }
 
 img {
+    margin: 3px;
     padding: 3px;
     border: 2px solid;
-    vertical-align: middle;
-    overflow-clip-margin: content-box;
-    overflow: clip;
+    max-width: 100%;
 }
 
 .list-inline {
@@ -133,3 +132,28 @@ hr {
 p {
     margin: 11px;
 }
+
+ul, ol {
+    margin-bottom: 11px;
+}
+
+ul {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+@media (max-width: 767px) {
+    .idxHdr {
+        width: 100%
+    }
+    .idxIcons {
+        width: 7em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
