@@ -136,9 +136,10 @@ html {
 hr {
     box-sizing: content-box;
     height: 0;
-    margin: 15px;
+    margin-bottom: 6px;
+    margin-top: 0;
 }
 
 p {
-    margin: 0 0 11px;
+    margin: 11px;
 }
