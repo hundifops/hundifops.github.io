@@ -60,15 +60,7 @@ a:-webkit-any-link {
     cursor: pointer;
 }
 
-@media (max-width: 767px) 
-.idxHdr {
-    width: 100%;
-}
-
-.col-xs-1,
-.col-sm-1,
-.col-md-1,
-.col-lg-1,
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1,
 .col-xs-2,
 .col-sm-2,
 .col-md-2,
@@ -110,9 +102,7 @@ a:-webkit-any-link {
 .col-md-11,
 .col-lg-11,
 .col-xs-12,
-.col-sm-12,
-.col-md-12,
-.col-lg-12 {
+.col-sm-12, .col-md-12, .col-lg-12 {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
