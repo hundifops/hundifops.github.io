@@ -1,8 +1,156 @@
-<html>
-    <head></head>
-    <body>
-        <pre>
-            Remain vigilant for subsequent developments forthcoming in due course
-        </pre>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hundifops 🦊</title>
+    <meta name="description" content="Welcome to Hundifops' little corner of the internet.">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <main class="container">
+
+        <!-- PROFILE -->
+        <header class="profile">
+            <div class="banner"></div>
+
+            <div class="profile-details">
+                <img src="assets/images/avatar.png" alt="Hundifops avatar" class="avatar">
+
+                <div class="profile-text">
+                    <h1>Hundifops <span>🦊</span></h1>
+                    <p class="handle">@hundifops</p>
+                    <p class="bio">
+                        Just a fox enjoying his little corner of the internet.
+                    </p>
+                </div>
+
+                <nav class="socials" aria-label="Social links">
+                    <a href="https://github.com/hundifops" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Discord</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Bluesky</a>
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- FEATURED GAME -->
+        <section class="featured-section">
+            <div class="section-title">
+                <div>
+                    <span class="eyebrow">A LITTLE BIT OF GAMING</span>
+                    <h2>Featured Game</h2>
+                </div>
+            </div>
+
+            <article class="featured-game">
+                <img src="assets/images/games/zelda.jpg" alt="The Legend of Zelda game artwork">
+
+                <div class="featured-overlay">
+                    <span class="game-label">Recently played</span>
+                    <h3>The Legend of Zelda</h3>
+                    <p>
+                        Exploring Hyrule, getting lost, and probably
+                        spending too much time doing side quests.
+                    </p>
+                    <span class="platform">Nintendo Switch 2</span>
+                </div>
+            </article>
+        </section>
+
+
+        <!-- GAME LIBRARY -->
+        <section class="library-section">
+
+            <div class="section-title">
+                <div>
+                    <span class="eyebrow">WHAT I'VE BEEN PLAYING</span>
+                    <h2>My Games</h2>
+                </div>
+
+                <span class="game-count">04 games</span>
+            </div>
+
+            <div class="filters" aria-label="Filter games">
+                <button class="filter active" data-filter="all">All</button>
+                <button class="filter" data-filter="pc">PC</button>
+                <button class="filter" data-filter="vr">VR</button>
+                <button class="filter" data-filter="nintendo">Nintendo</button>
+            </div>
+
+            <div class="game-grid">
+
+                <article class="game-card" data-platform="nintendo">
+                    <div class="cover">
+                        <img src="assets/images/games/zelda.jpg" alt="The Legend of Zelda cover">
+                        <span class="card-status">Recently played</span>
+                    </div>
+
+                    <div class="game-details">
+                        <h3>The Legend of Zelda</h3>
+                        <p>Nintendo Switch 2</p>
+                    </div>
+                </article>
+
+
+                <article class="game-card" data-platform="vr pc">
+                    <div class="cover">
+                        <img src="assets/images/games/vrchat.jpg" alt="VRChat cover">
+                        <span class="card-status">Regularly played</span>
+                    </div>
+
+                    <div class="game-details">
+                        <h3>VRChat</h3>
+                        <p>PC / VR</p>
+                    </div>
+                </article>
+
+
+                <article class="game-card" data-platform="pc">
+                    <div class="cover">
+                        <img src="assets/images/games/minecraft.jpg" alt="Minecraft cover">
+                        <span class="card-status">Occasionally played</span>
+                    </div>
+
+                    <div class="game-details">
+                        <h3>Minecraft</h3>
+                        <p>PC</p>
+                    </div>
+                </article>
+
+
+                <article class="game-card" data-platform="pc">
+                    <div class="cover">
+                        <img src="assets/images/games/wardogs.jpg" alt="WarDogs cover">
+                        <span class="card-status">In rotation</span>
+                    </div>
+
+                    <div class="game-details">
+                        <h3>WarDogs</h3>
+                        <p>PC</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Made with <span>♥</span> and a little fox magic.</p>
+            <p>© <span id="year"></span> Hundifops</p>
+        </footer>
+
+    </main>
+
+</body>
+
 </html>
