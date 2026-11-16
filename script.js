@@ -1,9 +1,9 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
 
-    /* ==================================
-       COPYRIGHT YEAR
-    ================================== */
+    // ==================================
+    // COPYRIGHT YEAR
+    // ==================================
 
     const year = document.getElementById("year");
 
@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
 
-    /* ==================================
-       GAME LIBRARY FILTERS
-    ================================== */
+    // ==================================
+    // GAME FILTERS
+    // ==================================
 
     const filterButtons = document.querySelectorAll(".filter");
     const gameCards = document.querySelectorAll(".game-card");
@@ -31,32 +31,49 @@ document.addEventListener("DOMContentLoaded", async () => {
             button.classList.add("active");
 
             gameCards.forEach(card => {
+
                 const platforms = card.dataset.platform.split(" ");
 
                 const visible =
                     filter === "all" || platforms.includes(filter);
 
                 card.classList.toggle("hidden", !visible);
-            });
 
+            });
         });
     });
 
 
-    /* ==================================
-       GAME RANKINGS
-    ================================== */
+    // ==================================
+    // LOAD GAME RANKINGS FROM JSON
+    // ==================================
 
-    // Tiers: S, A, B, C, D, Unranked
-    // Scores: 0–10
+    let gameRankings = {};
 
-    const response = await fetch("games.json");
-    const gameRankings = await response.json();
+    try {
+
+        const response = await fetch("./games.json");
+
+        if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
+        }
+
+        gameRankings = await response.json();
+
+        console.log("Game rankings loaded:", gameRankings);
+
+    } catch (error) {
+
+        console.error("Could not load games.json:", error);
+
+        gameRankings = {};
+
+    }
 
 
-    /* ==================================
-       MODAL ELEMENTS
-    ================================== */
+    // ==================================
+    // MODAL ELEMENTS
+    // ==================================
 
     const gameModal = document.getElementById("game-modal");
     const modalClose = document.getElementById("modal-close");
@@ -71,145 +88,199 @@ document.addEventListener("DOMContentLoaded", async () => {
     const ratingList = document.getElementById("rating-list");
 
 
-    /* ==================================
-       RADAR CHART
-    ================================== */
+    // ==================================
+    // DEFAULT RANKING
+    // ==================================
+
+    const defaultRanking = {
+        tier: "Unranked",
+
+        ratings: {
+            Gameplay: 0,
+            Story: 0,
+            Graphics: 0,
+            Soundtrack: 0,
+            Replayability: 0
+        },
+
+        review: "I haven't written a review for this game yet."
+    };
+
+
+    // ==================================
+    // CREATE RADAR CHART
+    // ==================================
 
     function createRadarChart(ratings) {
 
         const categories = Object.keys(ratings);
         const values = Object.values(ratings).map(value => {
-            const score = Number(value);
+            const number = Number(value);
 
-            return Number.isFinite(score)
-                ? Math.max(0, Math.min(10, score))
+            return Number.isFinite(number)
+                ? Math.max(0, Math.min(10, number))
                 : 0;
         });
 
         const centerX = 150;
         const centerY = 130;
         const radius = 82;
-        const labelRadius = 112;
 
-        function getPoint(index, value, maxRadius = radius) {
+        const angleStep = (Math.PI * 2) / categories.length;
 
-            const angle =
-                (Math.PI * 2 * index / categories.length) -
-                Math.PI / 2;
+        radarChart.innerHTML = "";
 
-            const distance = (value / 10) * maxRadius;
+        // Create chart grid
 
-            return {
-                x: centerX + Math.cos(angle) * distance,
-                y: centerY + Math.sin(angle) * distance
-            };
-        }
+        for (let level = 2; level <= 10; level += 2) {
 
-        let chart = "";
+            const points = categories.map((category, index) => {
 
-        // Background grid rings
+                const angle = angleStep * index - Math.PI / 2;
+                const distance = (radius * level) / 10;
 
-        [2, 4, 6, 8, 10].forEach(level => {
+                const x = centerX + Math.cos(angle) * distance;
+                const y = centerY + Math.sin(angle) * distance;
 
-            const points = categories.map((_, index) => {
-                const point = getPoint(index, level);
-                return `${point.x},${point.y}`;
+                return `${x},${y}`;
+
             }).join(" ");
 
-            chart += `
-                <polygon
-                    class="radar-grid"
-                    points="${points}"
-                />
-            `;
-        });
+            const grid = document.createElementNS(
+                "http://www.w3.org/2000/svg",
+                "polygon"
+            );
 
-        // Axis lines and category labels
+            grid.setAttribute("points", points);
+            grid.setAttribute("class", "radar-grid");
+
+            radarChart.appendChild(grid);
+        }
+
+
+        // Create chart axes
 
         categories.forEach((category, index) => {
 
-            const endpoint = getPoint(index, 10);
-            const label = getPoint(index, 10, labelRadius);
+            const angle = angleStep * index - Math.PI / 2;
 
-            let anchor = "middle";
+            const x = centerX + Math.cos(angle) * radius;
+            const y = centerY + Math.sin(angle) * radius;
 
-            if (label.x < centerX - 10) anchor = "end";
-            if (label.x > centerX + 10) anchor = "start";
+            const axis = document.createElementNS(
+                "http://www.w3.org/2000/svg",
+                "line"
+            );
 
-            const labelElement = document.createElementNS(
+            axis.setAttribute("x1", centerX);
+            axis.setAttribute("y1", centerY);
+            axis.setAttribute("x2", x);
+            axis.setAttribute("y2", y);
+            axis.setAttribute("class", "radar-axis");
+
+            radarChart.appendChild(axis);
+
+
+            // Category labels
+
+            const labelRadius = radius + 25;
+
+            const label = document.createElementNS(
                 "http://www.w3.org/2000/svg",
                 "text"
             );
 
-            labelElement.setAttribute("class", "radar-label");
-            labelElement.setAttribute("x", label.x);
-            labelElement.setAttribute("y", label.y);
-            labelElement.setAttribute("text-anchor", anchor);
-            labelElement.setAttribute("dominant-baseline", "middle");
+            label.setAttribute(
+                "x",
+                centerX + Math.cos(angle) * labelRadius
+            );
 
-            labelElement.textContent = category;
+            label.setAttribute(
+                "y",
+                centerY + Math.sin(angle) * labelRadius
+            );
 
-            chart += `
-                <line
-                    class="radar-axis"
-                    x1="${centerX}"
-                    y1="${centerY}"
-                    x2="${endpoint.x}"
-                    y2="${endpoint.y}"
-                />
-            `;
+            label.setAttribute("class", "radar-label");
+            label.setAttribute("text-anchor", "middle");
+            label.setAttribute("dominant-baseline", "middle");
+            label.textContent = category;
 
-            chart += labelElement.outerHTML;
+            radarChart.appendChild(label);
+
         });
 
-        // Rating shape
 
-        const ratingPoints = values.map((value, index) => {
-            const point = getPoint(index, value);
-            return `${point.x},${point.y}`;
+        // Create rating polygon
+
+        const points = values.map((value, index) => {
+
+            const angle = angleStep * index - Math.PI / 2;
+            const distance = (radius * value) / 10;
+
+            const x = centerX + Math.cos(angle) * distance;
+            const y = centerY + Math.sin(angle) * distance;
+
+            return `${x},${y}`;
+
         }).join(" ");
 
-        chart += `
-            <polygon
-                class="radar-area"
-                points="${ratingPoints}"
-            />
-        `;
+        const area = document.createElementNS(
+            "http://www.w3.org/2000/svg",
+            "polygon"
+        );
 
-        // Individual rating dots
+        area.setAttribute("points", points);
+        area.setAttribute("class", "radar-area");
+
+        radarChart.appendChild(area);
+
+
+        // Create rating points
 
         values.forEach((value, index) => {
 
-            const point = getPoint(index, value);
+            const angle = angleStep * index - Math.PI / 2;
+            const distance = (radius * value) / 10;
 
-            chart += `
-                <circle
-                    class="radar-point"
-                    cx="${point.x}"
-                    cy="${point.y}"
-                    r="4"
-                />
-            `;
+            const point = document.createElementNS(
+                "http://www.w3.org/2000/svg",
+                "circle"
+            );
+
+            point.setAttribute(
+                "cx",
+                centerX + Math.cos(angle) * distance
+            );
+
+            point.setAttribute(
+                "cy",
+                centerY + Math.sin(angle) * distance
+            );
+
+            point.setAttribute("r", "4");
+            point.setAttribute("class", "radar-point");
+
+            radarChart.appendChild(point);
+
         });
 
-        radarChart.innerHTML = chart;
     }
 
 
-    /* ==================================
-       RATING BARS
-    ================================== */
+    // ==================================
+    // CREATE RATING BARS
+    // ==================================
 
     function createRatingList(ratings) {
 
         ratingList.innerHTML = "";
 
-        Object.entries(ratings).forEach(([category, score]) => {
+        Object.entries(ratings).forEach(([category, value]) => {
 
-            const numericScore = Number(score);
+            const number = Number(value);
 
-            const validScore = Number.isFinite(numericScore)
-                ? Math.max(0, Math.min(10, numericScore))
+            const score = Number.isFinite(number)
+                ? Math.max(0, Math.min(10, number))
                 : 0;
 
             const item = document.createElement("div");
@@ -218,129 +289,139 @@ document.addEventListener("DOMContentLoaded", async () => {
             const header = document.createElement("div");
             header.className = "rating-item-header";
 
-            const name = document.createElement("span");
-            name.textContent = category;
+            const categoryName = document.createElement("span");
+            categoryName.textContent = category;
 
-            const value = document.createElement("span");
-            value.className = "rating-value";
-            value.textContent = `${validScore}/10`;
+            const ratingValue = document.createElement("span");
+            ratingValue.className = "rating-value";
+            ratingValue.textContent = `${score}/10`;
 
-            header.append(name, value);
+            header.appendChild(categoryName);
+            header.appendChild(ratingValue);
 
             const track = document.createElement("div");
             track.className = "rating-track";
 
             const fill = document.createElement("div");
             fill.className = "rating-fill";
-            fill.style.width = `${validScore * 10}%`;
+
+            fill.style.width = `${score * 10}%`;
 
             track.appendChild(fill);
-            item.append(header, track);
+
+            item.appendChild(header);
+            item.appendChild(track);
 
             ratingList.appendChild(item);
+
         });
+
     }
 
 
-    /* ==================================
-       OPEN GAME PROFILE
-    ================================== */
+    // ==================================
+    // OPEN GAME MODAL
+    // ==================================
 
     function openGameModal(card) {
 
-        const title = card.querySelector(
-            ".game-details h3"
-        )?.textContent.trim();
+        const titleElement = card.querySelector(".game-details h3");
+        const imageElement = card.querySelector(".cover img");
+        const platformElement = card.querySelector(".game-details p");
 
-        const image = card.querySelector(".cover img");
+        if (!titleElement || !imageElement || !gameModal) {
+            return;
+        }
 
-        const platform = card.querySelector(
-            ".game-details p"
-        );
+        const title = titleElement.textContent.trim();
 
-        if (!title || !image || !gameModal) return;
+        const ranking = gameRankings[title] || defaultRanking;
 
-        const ranking = gameRankings[title] || {
-            tier: "Unranked",
-            ratings: {
-                "Gameplay": 0,
-                "Story": 0,
-                "Graphics": 0,
-                "Soundtrack": 0,
-                "Replayability": 0
-            },
-            review: "No review has been added yet."
-        };
+        const platform = platformElement
+            ? platformElement.textContent
+            : "Platform not specified";
 
-        const tier = ranking.tier.toUpperCase();
+        // Game information
 
-        const tierClasses = {
-            "S": "tier-s",
-            "A": "tier-a",
-            "B": "tier-b",
-            "C": "tier-c",
-            "D": "tier-d",
-            "UNRANKED": "tier-unranked"
-        };
-
-        modalImage.src = image.src;
+        modalImage.src = imageElement.src;
         modalImage.alt = title;
 
         modalTitle.textContent = title;
+        modalPlatform.textContent = platform;
 
-        modalPlatform.textContent = platform
-            ? platform.textContent
-            : "Platform not specified";
+        // Tier
 
-        modalTier.textContent = tier === "UNRANKED"
-            ? "UNRANKED"
-            : `${tier} TIER`;
+        const tier = ranking.tier || "Unranked";
 
-        modalTier.className =
-            "tier-badge " +
-            (tierClasses[tier] || "tier-unranked");
+        modalTier.textContent = tier;
 
-        modalReview.textContent = ranking.review;
+        modalTier.className = "tier-badge";
 
-        createRadarChart(ranking.ratings);
-        createRatingList(ranking.ratings);
+        const tierClass = {
+            S: "tier-s",
+            A: "tier-a",
+            B: "tier-b",
+            C: "tier-c",
+            D: "tier-d"
+        };
+
+        modalTier.classList.add(
+            tierClass[tier.toUpperCase()] || "tier-unranked"
+        );
+
+        // Review
+
+        modalReview.textContent =
+            ranking.review || "No review has been written yet.";
+
+        // Ratings
+
+        const ratings = ranking.ratings || defaultRanking.ratings;
+
+        createRadarChart(ratings);
+        createRatingList(ratings);
+
+        // Show modal
 
         if (!gameModal.open) {
             gameModal.showModal();
         }
+
     }
 
 
-    /* ==================================
-       GAME CARD CLICK EVENTS
-    ================================== */
+    // ==================================
+    // GAME CARD CLICK EVENTS
+    // ==================================
 
-    if (gameModal && modalClose && radarChart && ratingList) {
+    gameCards.forEach(card => {
 
-        gameCards.forEach(card => {
+        card.setAttribute("tabindex", "0");
+        card.setAttribute("role", "button");
 
-            card.setAttribute("tabindex", "0");
-            card.setAttribute("role", "button");
+        card.addEventListener("click", () => {
+            openGameModal(card);
+        });
 
-            card.addEventListener("click", () => {
+        card.addEventListener("keydown", event => {
+
+            if (event.key === "Enter" || event.key === " ") {
+
+                event.preventDefault();
                 openGameModal(card);
-            });
 
-            card.addEventListener("keydown", event => {
-
-                if (event.key === "Enter" || event.key === " ") {
-                    event.preventDefault();
-                    openGameModal(card);
-                }
-
-            });
+            }
 
         });
 
+    });
 
-        /* ==================================
-           CLOSE MODAL
-        ================================== */
+
+    // ==================================
+    // CLOSE MODAL
+    // ==================================
+
+    if (gameModal && modalClose) {
 
         modalClose.addEventListener("click", () => {
             gameModal.close();
