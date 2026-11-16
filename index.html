@@ -181,6 +181,62 @@
 
     </main>
 
+    <!-- GAME RANKING MODAL -->
+    <dialog id="game-modal" class="game-modal">
+        <div class="modal-header">
+            <span class="eyebrow">GAME PROFILE</span>
+            <button class="modal-close" id="modal-close" aria-label="Close">
+                &times;
+            </button>
+        </div>
+    
+        <div class="modal-content">
+            <div class="modal-game-header">
+                <img id="modal-image" src="" alt="" class="modal-image">
+    
+                <div class="modal-game-info">
+                    <h2 id="modal-title"></h2>
+                    <p id="modal-platform" class="modal-platform"></p>
+    
+                    <div class="tier-container">
+                        <span class="tier-label">MY OVERALL RANKING</span>
+                        <span id="modal-tier" class="tier-badge"></span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="modal-divider"></div>
+    
+            <div class="ranking-breakdown">
+                <div class="ranking-heading">
+                    <div>
+                        <span class="eyebrow">THE BREAKDOWN</span>
+                        <h3>My ratings</h3>
+                    </div>
+                    <span class="rating-scale">OUT OF 10</span>
+                </div>
+    
+                <div class="chart-layout">
+                    <div class="radar-chart-container">
+                        <svg id="radar-chart" viewBox="0 0 300 270" role="img"
+                            aria-label="Radar chart showing game ratings">
+                        </svg>
+                    </div>
+    
+                    <div id="rating-list" class="rating-list"></div>
+                </div>
+            </div>
+    
+            <div class="modal-divider"></div>
+    
+            <div class="review-container">
+                <span class="eyebrow">MY EXPERIENCE</span>
+                <h3>My thoughts</h3>
+                <p id="modal-review"></p>
+            </div>
+        </div>
+    </dialog>
+
 </body>
 
 </html>

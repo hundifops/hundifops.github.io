@@ -450,3 +450,300 @@ footer span {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* ==================================
+   GAME RANKING MODAL
+================================== */
+
+.game-card {
+    cursor: pointer;
+}
+
+.game-card:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.game-modal {
+    width: min(760px, calc(100% - 30px));
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: auto;
+    padding: 28px;
+    color: var(--text);
+    background: #30221b;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.55);
+}
+
+.game-modal::backdrop {
+    background: rgba(12, 8, 6, 0.84);
+    backdrop-filter: blur(6px);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-size: 2rem;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    color: var(--accent-light);
+}
+
+.modal-game-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.modal-image {
+    width: 155px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: var(--surface);
+    flex-shrink: 0;
+}
+
+.modal-game-info {
+    flex: 1;
+}
+
+.modal-game-info h2 {
+    font-size: 1.8rem;
+    line-height: 1.25;
+}
+
+.modal-platform {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 7px;
+}
+
+.tier-container {
+    margin-top: 22px;
+}
+
+.tier-label {
+    display: block;
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+.tier-badge {
+    display: inline-block;
+    min-width: 62px;
+    text-align: center;
+    padding: 8px 17px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 850;
+    letter-spacing: 1px;
+}
+
+.tier-s {
+    background: #d9824b;
+    color: #24150e;
+}
+
+.tier-a {
+    background: #e8b46e;
+    color: #24150e;
+}
+
+.tier-b {
+    background: #789b80;
+    color: #102017;
+}
+
+.tier-c {
+    background: #8293a5;
+    color: #101b27;
+}
+
+.tier-d {
+    background: #a76d69;
+    color: #fff1ed;
+}
+
+.tier-unranked {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--muted);
+}
+
+.modal-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 25px 0;
+}
+
+.ranking-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.ranking-heading h3,
+.review-container h3 {
+    font-size: 1.15rem;
+    margin-top: 3px;
+}
+
+.rating-scale {
+    color: var(--muted);
+    font-size: 0.65rem;
+    letter-spacing: 1px;
+}
+
+.chart-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.radar-chart-container {
+    width: 100%;
+    max-width: 330px;
+    margin: auto;
+}
+
+#radar-chart {
+    display: block;
+    width: 100%;
+    overflow: visible;
+}
+
+.radar-grid {
+    fill: none;
+    stroke: rgba(255, 230, 205, 0.15);
+    stroke-width: 1;
+}
+
+.radar-axis {
+    stroke: rgba(255, 230, 205, 0.2);
+    stroke-width: 1;
+}
+
+.radar-area {
+    fill: rgba(217, 130, 75, 0.25);
+    stroke: var(--accent);
+    stroke-width: 2.5;
+    stroke-linejoin: round;
+}
+
+.radar-point {
+    fill: var(--accent-light);
+    stroke: #30221b;
+    stroke-width: 2;
+}
+
+.radar-label {
+    fill: var(--muted);
+    font-size: 10px;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.rating-list {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.rating-item-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 0.8rem;
+}
+
+.rating-item-header span:first-child {
+    color: var(--muted);
+}
+
+.rating-value {
+    color: var(--accent-light);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+}
+
+.rating-track {
+    width: 100%;
+    height: 6px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.09);
+}
+
+.rating-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: var(--accent);
+}
+
+.review-container h3 {
+    margin-bottom: 9px;
+}
+
+.review-container p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+@media (max-width: 600px) {
+    .game-modal {
+        padding: 19px;
+    }
+
+    .modal-game-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .modal-image {
+        width: 110px;
+        height: 145px;
+    }
+
+    .modal-game-info h2 {
+        font-size: 1.35rem;
+    }
+
+    .chart-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .radar-chart-container {
+        max-width: 300px;
+    }
+
+    .rating-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 13px;
+    }
+}
