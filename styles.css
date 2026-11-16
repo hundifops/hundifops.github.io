@@ -83,10 +83,10 @@ button {
         linear-gradient(to bottom,
             transparent 55%,
             rgba(39, 28, 23, 0.5)),
-        url("assets/images/banner.jpg");
+        url("assets/images/poledancehundi.png");
 
     background-size: cover;
-    background-position: center;
+    background-position: center 19%;
 }
 
 .profile-details {
@@ -97,9 +97,10 @@ button {
 }
 
 .avatar {
-    width: 125px;
-    height: 125px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
+    object-position: center 10%;
     border-radius: 50%;
     border: 5px solid #30221b;
     background: #503426;
@@ -363,6 +364,16 @@ footer {
 
 footer span {
     color: var(--accent);
+}
+
+/* Adults Only & Credits */
+
+.adults-only {
+    margin-bottom: 45px;
+}
+
+.credits {
+    margin-bottom: 45px;
 }
 
 /* RESPONSIVE */
